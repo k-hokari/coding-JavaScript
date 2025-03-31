@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/transition.css">
+    <link rel="stylesheet" href="css/hamburger.css">
   </head>
 
   <body>
@@ -23,7 +24,11 @@
 
     <header id="header" class="wrapper">
       <h1 class="site-title"><a href="index.html"><img src="https://code-jump.com/demo/html/profile/img/logo.svg" alt="Profile"></a></h1>
-      <nav>
+      
+      <!-- ハンバーガーメニュー -->
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      
+      <nav id="g-nav">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#bicycle">Bicycle</a></li>
@@ -83,6 +88,7 @@
     <!--自作のJS-->
     <script src="js/loading.js"></script>
     <script src="js/transition.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 
 </html>
