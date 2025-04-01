@@ -55,9 +55,12 @@ li {
   display: flex;
   padding: 10px 0;
 }
-#header li {
+
+/* ドロップダウンメニュー表示の左余白削除のためコメントアウト */
+/* #header li {
   margin-left: 30px;
-}
+} */
+
 #header li a {
   color: #24292e;
 }

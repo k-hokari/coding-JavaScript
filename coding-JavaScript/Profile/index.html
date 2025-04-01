@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/transition.css">
     <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/dropdown.css">
   </head>
 
   <body>
@@ -30,8 +31,57 @@
       
       <nav id="g-nav">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#bicycle">Bicycle</a></li>
+          <li class="has-child"><a href="#about">About</a>
+
+            <!-- ドロップダウンメニュー -->
+            <ul>
+              <li class="doropdown-li">
+                <a href="#about">
+                  <dl>
+                    <dt>
+                      <img src="https://code-jump.com/demo/html/profile/img/about.jpg" alt="">
+                    </dt>
+                    <dd>KAKERU MIYAICHI</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <a href="#bicycle">Bicycle</a>
+            <ul>
+              <li class="doropdown-li">
+                <a href="#bicycle">
+                  <dl>
+                    <dt>
+                      <img src="https://code-jump.com/demo/html/profile/img/bicycle1.jpg" alt="">
+                    </dt>
+                    <dd>タイトルタイトル</dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="doropdown-li">
+                <a href="#bicycle">
+                  <dl>
+                    <dt>
+                      <img src="https://code-jump.com/demo/html/profile/img/bicycle2.jpg" alt="">
+                    </dt>
+                    <dd>タイトルタイトル</dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="doropdown-li">
+                <a href="#bicycle">
+                  <dl>
+                    <dt>
+                      <img src="https://code-jump.com/demo/html/profile/img/bicycle3.jpg" alt="">
+                    </dt>
+                    <dd>タイトルタイトル</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -89,6 +139,7 @@
     <script src="js/loading.js"></script>
     <script src="js/transition.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/dropdown.js"></script>
   </body>
 
 </html>
