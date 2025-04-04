@@ -76,13 +76,6 @@ olタグはリストの先頭に番号がつくので、その分だけ左に移
 #index .index-list {
   margin-left: 20px;
 }
-#index .index-list li {
-  margin-bottom: 20px;
-}
-/* リストの最後は下にマージンをつけない */
-#index .index-list li:last-child {
-  margin-bottom: 0;
-}
 
 /*-------------------------------------------
 Detail
@@ -94,7 +87,7 @@ Detail
   display: flex;
   align-items: flex-start;
 }
-#detail .content .title {
+#detail .content .title2 {
   font-size: 1.125rem;
   font-weight: bold;
 }
