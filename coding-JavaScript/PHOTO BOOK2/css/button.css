@@ -1,0 +1,39 @@
+/*== 線の上を別の線が伸びる */
+
+.btnlinestretches4{
+    /*線の基点とするためrelativeを指定*/
+	position:relative;
+    /*リンクの形状*/ 
+	color:#333;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*線の設定*/
+.btnlinestretches4::before,
+.btnlinestretches4::after{
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	left:0;
+     /*線の形状*/   
+	background:#dedede;
+	width:100%;
+	height:1px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+}
+
+ /*hover時に伸びる線の形状*/   
+.btnlinestretches4::after{
+	width:0;
+	background:#333;
+}
+
+ /*hover時に100%に伸びる*/   
+.btnlinestretches4:hover::after {
+	width:100%;
+}
