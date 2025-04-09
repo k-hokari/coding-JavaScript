@@ -40,27 +40,11 @@ nav ul li a:hover{
 	color:#fff;	
 }
 
-/*==矢印の設定*/
-
-/*2階層目を持つliの矢印の設定*/
-
-nav ul li.has-child > a::before{
-	content:'';
-	position: absolute;
-	left:15px;
-	top:25px;
-	width:6px;
-	height:6px;
-	border-top: 2px solid #999;
-    border-right:2px solid #999;
-    transform: rotate(135deg);
-}
-
 /*==2階層目以降の画像設定*/
 
 nav ul li.has-child img{
 	max-width: 100%;
-	height: auto;
+	height: 150px;
 	transition: all .5s;
 	vertical-align: bottom;
 }
@@ -72,8 +56,7 @@ nav ul li.has-child img:hover{
 
 nav ul li.has-child dt{
 	overflow: hidden;
-	height: 20vh;
-	margin:0 0 20px 0;
+	margin:0 0 10px 0;
 }
 
 @media screen and (max-width:1200px){
@@ -86,35 +69,34 @@ nav ul li.has-child dt{
 /*== 2層目の設定 */
 
 nav li.has-child ul{
-  /*絶対配置で位置を指定*/
+  	/*絶対配置で位置を指定*/
     position: absolute;
-	left:5%;
-	top:58px;
+	left: 0;
+	top: 100%;
 	z-index: 4;
-  /*子要素を横並びに*/    
+  	/*子要素を横並びに*/    
 	justify-content: space-between;
 	flex-wrap: wrap;
     /*形状を指定*/
-	background:#888;
-	width:90%;
     /*はじめは非表示*/
- display: none;
+ 	display: none;
 	visibility: hidden;
 	opacity: 0;
-     /*アニメーション設定*/
+    /*アニメーション設定*/
 	transition: all .3s;
 }
 
 /*hoverしたら表示*/
 nav li.has-child:hover > ul{
-display:flex;
-  visibility: visible;
-  opacity: 1;
+	display:flex;
+ 	visibility: visible;
+  	opacity: 1;
 }
 
 /*各ナビゲーション横幅*/
 nav li.has-child ul li{
-	width:100%;
+	/* width:100%; */
+	width: 200px;
 }
 
 /*ナビゲーションaタグの形状*/
@@ -143,7 +125,8 @@ nav li.has-child ul li a:active{
 	opacity:1;/*JSで制御するため一旦表示*/
 	display: none;/*JSのslidetoggleで表示させるため非表示に*/
 	transition:none;/*JSで制御するためCSSのアニメーションを切る*/
-}
+	}
+
     nav li.has-child:hover > ul {
 	    display: none;
     }
@@ -158,6 +141,7 @@ nav li.has-child ul li a:active{
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	nav li.has-child ul li dt{
 		width:30%;
 		height: auto;
@@ -165,28 +149,37 @@ nav li.has-child ul li a:active{
 	}
 
 	nav li.has-child ul li dd{
-		width:64%;			
+		width:64%;
 	}
 
     
     nav ul li a{
 	    padding: 10px 20px;
 	    border-bottom:1px solid #ccc;
-}
+	}
     
     nav ul li li a{
 		padding: 0;
-}
+	}
 	
-/*矢印の位置と向き*/
-	
-nav ul li.has-child > a::before{
-	top:17px;
-	left:20px;
-    transform: rotate(135deg);
+} 
+
+/* 配置修正に伴う追加設定 */
+.dropdown-style {
+	position: relative;
 }
-    
-nav ul li.has-child.active > a::before{
-    transform: rotate(-45deg);
+
+.dropdown-about {
+	right: 200px;
+	top: -50px;
 }
+
+.dropdown-bicycle {
+	left: 200px;
+	top: -50px;
+}
+
+.dropdown-text {
+	font-size: 10px;
+	margin-top: 10px;
 }
