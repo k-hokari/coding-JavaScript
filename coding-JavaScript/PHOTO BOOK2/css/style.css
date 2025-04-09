@@ -13,6 +13,12 @@ img {
 ul {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+  color:#333;
+}
+
 /* サイト全体のコンテンツ幅を設定 */
 .container {
   max-width: 1000px;
@@ -161,6 +167,8 @@ footer
   font-size: 0.625rem;
   padding: 15px 0;
   text-align: center;
+
+  display: flex;
 }
 
 /*-------------------------------------------
