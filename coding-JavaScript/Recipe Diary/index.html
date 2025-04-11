@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/transition.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
   </head>
 
   <body>
@@ -20,7 +22,11 @@
     <div id="container">
         <main>
             <div id="mainvisual">
-              <img src="https://code-jump.com/demo/html/recipe/img/mainvisual.jpg" alt="">
+                <ul class="slider">
+                    <li class="slider-item slider-item01"></li>
+                    <li class="slider-item slider-item02"></li>
+                    <li class="slider-item slider-item03"></li>
+                </ul>
             </div>
         
             <div class="text">
@@ -55,7 +61,9 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--自作のJS-->
     <script src="js/trasnition.js"></script>
+    <script src="js/slick.js"></script>
   </body>
 </html>

@@ -25,12 +25,12 @@ Mainvisual
 「object-fit: cover;」でトリミングを行い、「object-position: center top;」で
 横は中央、縦をトップに配置する。
 */
-#mainvisual img {
+#mainvisual {
   width: 100%;
   height: 100vh;
   object-fit: cover;
   object-position: center top;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 /*-------------------------------------------
