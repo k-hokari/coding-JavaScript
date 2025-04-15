@@ -112,7 +112,4 @@ SP
   .flex {
     flex-direction: column;
   }
-  .flex li {
-    width: 100%;
-  }
 }

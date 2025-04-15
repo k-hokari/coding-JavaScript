@@ -35,7 +35,7 @@
 .slick-prev, 
 .slick-next {
     position: absolute;/*絶対配置にする*/
-	z-index: 3;
+	z-index: 0;
     top: 42%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
