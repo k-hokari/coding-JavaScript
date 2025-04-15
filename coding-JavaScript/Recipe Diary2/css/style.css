@@ -6,6 +6,7 @@ html {
 body {
   color: #2b2a27;
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+  background-color: #eee;
 }
 img {
   max-width: 100%;
@@ -15,6 +16,7 @@ ul {
 }
 a {
   color: #2b2a27;
+  text-decoration: none;
 }
 
 /*-------------------------------------------

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/tab.css">
   </head>
 
   <body>
@@ -19,31 +20,44 @@
         </div>
 
         <div class="recipe">
-          <h1 class="page-title">ひよこ豆とアボガドのタコス</h1>
-          <p>たっぷりのひよこ豆とレンズ豆にアボガドとトマトを添えて、少しライムを絞ったらおいしいタコスのできあがりです。</p>
+            <h1 class="page-title">ひよこ豆とアボガドのタコス</h1>
 
-          <h2 class="content-title">材料（2人分）</h2>
-          <dl class="ingredient-list">
-            <dt>テキストテキスト</dt>
-            <dd>1個</dd>
-            <dt>テキストテキスト</dt>
-            <dd>1個</dd>
-            <dt>テキストテキスト</dt>
-            <dd>1個</dd>
-            <dt>テキストテキスト</dt>
-            <dd>1個</dd>
-            <dt>テキストテキスト</dt>
-            <dd>1個</dd>
-          </dl>
+            <!-- タブ -->
+            <ul class="tab">
+                <li><a href="#point">おすすめポイント</a></li>
+                <li><a href="#material">材料</a></li>
+                <li><a href="#how">作り方</a></li>
+            </ul>
 
-          <h2 class="content-title">作り方</h2>
-          <ol class="step-list">
-            <li>テキストテキストテキストテキスト</li>
-            <li>テキストテキストテキストテキスト</li>
-            <li>テキストテキストテキストテキスト</li>
-            <li>テキストテキストテキストテキスト</li>
-            <li>テキストテキストテキストテキスト</li>
-          </ol>
+            <div id="point" class="area">
+                <p>たっぷりのひよこ豆とレンズ豆にアボガドとトマトを添えて、少しライムを絞ったらおいしいタコスのできあがりです。</p>
+            </div>
+
+            <div id="material" class="area">
+              <h2 class="content-title">材料（2人分）</h2>
+            <dl class="ingredient-list">
+                <dt>テキストテキスト</dt>
+              <dd>1個</dd>
+              <dt>テキストテキスト</dt>
+              <dd>1個</dd>
+              <dt>テキストテキスト</dt>
+              <dd>1個</dd>
+              <dt>テキストテキスト</dt>
+              <dd>1個</dd>
+              <dt>テキストテキスト</dt>
+              <dd>1個</dd>
+                </dl>
+            </div>
+            <div id="how" class="area">
+              <h2 class="content-title">作り方</h2>
+            <ol class="step-list">
+                <li>テキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキスト</li>
+                </ol>
+            </div>
         </div>
       </div>
 
@@ -60,5 +74,9 @@
       </ul>
       <p>&copy; 2021 Recipe Diary</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- 自作のJS -->
+    <script src="js/tab.js"></script>
   </body>
 </html>
