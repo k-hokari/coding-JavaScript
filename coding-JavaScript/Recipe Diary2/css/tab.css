@@ -3,17 +3,42 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
+/* 【add】タブに三角をつけるための基準位置 */
+.tab li {
+	position: relative;
+}
+
 .tab li a{
 	display: block;
-	background:#ddd;
+	background:#fff;
 	margin:0 2px;
 	padding:10px 20px;
+
+	/* 【add】角丸にして文字を青色にする */
+	color: blue;
+	border-radius: 10px 10px 0 0;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
-	background:#fff;
+	background:lightskyblue;
+	border-radius: 10px;
 }
 
+/* 【add】吹き出し風のタブにするために三角を追加 */
+.tab li.active::before {
+	content: '';
+	position: absolute;
+	bottom: -13px;
+	left: 30%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 13px solid lightskyblue;
+	z-index: 10;
+}
 
 /*エリアの表示非表示と形状*/
 .area {
