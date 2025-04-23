@@ -2,6 +2,12 @@
 　5-3-9 テキストが入れ替わる
 ===================================*/
 
+.gnavi {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
 
 .gnavi li a{
     /*テキストの基点とするためrelativeを指定*/

@@ -1,0 +1,30 @@
+/*========= 検索窓のためのCSS ===============*/
+
+/*検索窓のエリア*/
+#search-wrap {
+    /* position: absolute; */
+    z-index: 2;/*最前面に設定。数字は変更可*/
+    margin-left: auto;
+}
+
+/*テキスト入力input設定*/
+#search-text{
+   width: 45px;/*テキスト入力エリアが伸びる前の横幅*/
+   height: 45px;
+   padding: 10px;
+   border: none;
+   background:#f2f2f2 url("https://ugokuweb.coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-1/img/icon_search.svg") no-repeat 13px center;/*虫眼鏡アイコンを背景に表示*/
+   background-size: 15px 15px;
+   transition: all 0.5s;/*transitionを使ってスムースに伸ばす*/
+   outline: none;
+   cursor: pointer;/*カーソルを指マークに*/
+   border: 1px solid #000;
+   border-radius: 10px;
+}
+
+/*テキスト入力inputにフォーカスした時の形状*/
+#search-text:focus {
+   width: 300px;/*テキスト入力エリアが伸びる後の横幅*/
+   padding: 20px 0 20px 45px;
+   /* box-shadow: 0 2px rgba(6,0,1,.26); */
+}
