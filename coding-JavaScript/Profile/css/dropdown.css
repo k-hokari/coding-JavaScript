@@ -183,3 +183,11 @@ nav li.has-child ul li a:active{
 	font-size: 10px;
 	margin-top: 10px;
 }
+
+/* モーダルに見せるための設定 */
+dl {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 7px #333
+}
