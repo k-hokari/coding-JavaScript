@@ -9,8 +9,8 @@
 /*テキスト入力input設定*/
 #search-text{
    position: absolute;
-   right: 4%;
-   top: 4%;
+   right: 5%;
+   top: 55px;
    width: 45px;/*テキスト入力エリアが伸びる前の横幅*/
    height: 45px;
    padding: 10px;
