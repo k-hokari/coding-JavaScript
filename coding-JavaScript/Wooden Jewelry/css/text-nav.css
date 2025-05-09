@@ -26,7 +26,7 @@
     /*アニメーションの指定*/
 	transition: all .5s;
 	transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
-  /*ブロック要素にして透過なし、テキスト折り返しなし*/  
+  	/*ブロック要素にして透過なし、テキスト折り返しなし*/  
 	display: block;
 	opacity:1;
 	white-space: nowrap;
