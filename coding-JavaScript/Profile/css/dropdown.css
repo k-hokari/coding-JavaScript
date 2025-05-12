@@ -60,39 +60,26 @@ nav ul li.has-child dt{
 	margin:0 0 10px 0;
 }
 
-@media screen and (max-width:1200px){
-nav ul li.has-child dt{
-	height: 12vh;
-}
-	
-}
-
 /*== 2層目の設定 */
 
 nav li.has-child ul.dropdown-style{
-  	/*絶対配置で位置を指定*/
-    position: absolute;
+    position: absolute; /*絶対配置で位置を指定*/
 	left: 0;
 	top: 100%;
-	z-index: 4;
-  	/*子要素を横並びに*/    
+	z-index: 1;
 	justify-content: space-between;
 	flex-wrap: wrap;
-    /*形状を指定*/
-    /*はじめは非表示*/
  	display: none;
 	visibility: hidden;
 	opacity: 0;
-    /*アニメーション設定*/
 	transition: all 0.3s;
 }
 
-/*hoverしたら表示*/
-/* nav li.has-child:hover > ul{
-	display:flex;
- 	visibility: visible;
-  	opacity: 1;
-} */
+nav li.has-child:hover ul.dropdown-style {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
 
 /*各ナビゲーション横幅*/
 nav li.has-child ul li{
@@ -108,6 +95,36 @@ nav li.has-child ul li a:hover,
 nav li.has-child ul li a:active{
 	background:#3577CA;
 }
+
+.dropdown-about {
+	right: 200px;
+	top: -50px;
+}
+
+.dropdown-bicycle {
+	left: 200px;
+	top: -50px;
+}
+
+.dropdown-text {
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+/* モーダルに見せるための設定 */
+dl {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 7px #333
+}
+
+
+nav ul > li.has-child {
+  position: relative;
+  z-index: 2; /* ドロップダウンより上になるように */
+}
+
 
 /*==768px以下の形状*/
 @media screen and (max-width:768px){
@@ -132,62 +149,37 @@ nav li.has-child ul li a:active{
     }
     
 	nav li.has-child ul li{
-		width:100%;
 		text-align: left;
 	}
 	
 	nav li.has-child ul li dl{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		width: 180px;
 	}
 
-	nav li.has-child ul li dt{
-		width:30%;
-		height: auto;
-		margin: 0;
-	}
-
-	nav li.has-child ul li dd{
-		width:64%;
-	}
-
-    
     nav ul li a{
 	    padding: 10px 20px;
-	    border-bottom:1px solid #ccc;
 	}
     
     nav ul li li a{
 		padding: 0;
 	}
 	
-} 
+	.dropdown-about {
+		right: 100%;
+		top: -50px;
+	}
 
-/* 配置修正に伴う追加設定 */
-.dropdown-style {
-	position: relative;
+	.dropdown-bicycle {
+		left: 50%;
+		top: -50px;
+	}
 }
 
-.dropdown-about {
-	right: 200px;
-	top: -50px;
-}
-
-.dropdown-bicycle {
-	left: 200px;
-	top: -50px;
-}
-
-.dropdown-text {
-	font-size: 10px;
-	margin-top: 10px;
-}
-
-/* モーダルに見せるための設定 */
-dl {
-	background-color: #fff;
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 0 2px 7px #333
+@media screen and (max-width: 600px) {
+  nav li.has-child ul.dropdown-style {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }
